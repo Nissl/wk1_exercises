@@ -1,0 +1,7 @@
+What's the major difference between an Array and a Hash?
+
+Arrays are index-based. Each value is stored at a specific numerical
+location. 
+
+Hashes are key based. Each value is accessed by reference to a key.
+The keys can be stored in any order. 

@@ -1,0 +1,6 @@
+Rails API is gone, but I took a TA's advice and installed Dash.
+Incredibly handy because it's available offline and centralizes all of my documentation (for things beyond Ruby/Rails as well) in one place.
+
+It's also very easy to search subsets of the documentation.
+
+I'm still a bit of a novice to know what else I should be looking for.
