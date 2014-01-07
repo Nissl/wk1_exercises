@@ -7,8 +7,7 @@ Answer: 1
 
 2. What's the difference between an Array and a Hash?
   
-Answer: Arrays organize information by reference to enumerated location. Hashes organize information
-by reference to keys.
+Answer: Arrays organize information by enumerated location. Hashes organize information by reference to keys. 
 
 3. Every Ruby expression returns a value. Say what value is returned in the below expressions:
   arr = [1, 2, 3, 3]
@@ -19,12 +18,11 @@ Answer:
 [1, 2, 3, 3]
 [1, 2, 3] 
 [1, 2, 3] 
+# Note that the difference between .uniq and .uniq! is that if you had run them on arr, then asked for arr, the .uniq arr would be [1, 2, 3, 3] and the .uniq! arr would be [1, 2, 3]. The bang at the end of uniq means it modifies the input variable.
 
 4. What's the difference between the map and select methods for the Array class? Give an example of when you'd use one versus the other.
 
-Answer: The .map method returns the result of running a block on each element in an array. The .select method
-returns an array with the values that meet a condition specified in a block. You should use map when you
-want to transform all elements in a block, and select when you want to pull out elements that meet specific criteria. 
+Answer: The .map method returns the result of running a block on each element in an array. The .select method returns an array with the values that meet a condition specified in a block. You should use map when you want to transform all elements in a block, and select when you want to pull out elements that meet specific criteria. 
 
 5. Say you wanted to create a Hash. How would you do so if you wanted the hash keys to be String objects instead of symbols?
 
@@ -33,6 +31,7 @@ Answer:
 h = { "one" => 1, "two" => 2 }
 # symbols
 h = { one: 1, two: 2 }
+# Note that the Ruby style guide indicates symbols are preferred unless you have a distinct reason to use strings.
 
 6. What is returned?
 x = 1
@@ -64,4 +63,3 @@ Answer:
  This causes an error, because you never defined x. You can't increment something that's undefined.
  If we assume x was defined earlier (for question 7), then the answer is 7, because you've incremented the previous value (4) 3 more times.
 
-  
