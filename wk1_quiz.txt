@@ -1,0 +1,67 @@
+1. What is the value of a after the below code is executed?
+a = 1
+  b = a
+  b = 3
+
+Answer: 1
+
+2. What's the difference between an Array and a Hash?
+  
+Answer: Arrays organize information by reference to enumerated location. Hashes organize information
+by reference to keys.
+
+3. Every Ruby expression returns a value. Say what value is returned in the below expressions:
+  arr = [1, 2, 3, 3]
+  [1, 2, 3, 3].uniq
+  [1, 2, 3, 3].uniq!
+
+Answer:
+[1, 2, 3, 3]
+[1, 2, 3] 
+[1, 2, 3] 
+
+4. What's the difference between the map and select methods for the Array class? Give an example of when you'd use one versus the other.
+
+Answer: The .map method returns the result of running a block on each element in an array. The .select method
+returns an array with the values that meet a condition specified in a block. You should use map when you
+want to transform all elements in a block, and select when you want to pull out elements that meet specific criteria. 
+
+5. Say you wanted to create a Hash. How would you do so if you wanted the hash keys to be String objects instead of symbols?
+
+Answer:
+# Strings 
+h = { "one" => 1, "two" => 2 }
+# symbols
+h = { one: 1, two: 2 }
+
+6. What is returned?
+x = 1
+  x.odd? ? "no way!" : "yes, sir!"
+
+Answer:
+"no way!"
+# This is a ternary operator. If the criteria before the question mark is true, the first answer is returned; if false, the second answer is returned.
+
+7. What is x?
+x = 1
+  3.times do
+    x += 1
+  end
+  puts x
+What is x?
+
+Answer:
+4
+# You've incremented x four times.
+
+8. 
+3.times do
+    x += 1
+  end
+  puts x
+
+ Answer:
+ This causes an error, because you never defined x. You can't increment something that's undefined.
+ If we assume x was defined earlier (for question 7), then the answer is 7, because you've incremented the previous value (4) 3 more times.
+
+  
